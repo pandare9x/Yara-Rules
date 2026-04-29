@@ -1,0 +1,12 @@
+rule CastleStealer {
+	meta:
+		author = "RussianPanda"
+		description = "Detects CastleStealer" 
+		date = "4/29/2026"
+		hash = "ed391a16389234f9ebb6727711baaf3e068d7f77c465708fa3e8b7d0565d7fb9"
+	strings:
+		$s1 = {25 1F 39 16 9E 25 1F 30 17 9E 25 1F 33 18 9E 25 1F 65 19 9E}
+		$s2 = {25 16 20 F1 00 00 00 9C}
+	condition:
+		uint16(0) == 0x5A4D and all of ($s*)
+}
