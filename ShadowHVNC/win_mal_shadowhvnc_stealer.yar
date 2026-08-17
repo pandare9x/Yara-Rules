@@ -2,7 +2,7 @@ rule ShadowHVNC_Stealer {
     meta:
         description = "Detects Shadow HVNC Stealer"
         author = "PandaRE"
-        date = "2025-08-17"
+        date = "2026-08-17"
         hash = "d07278643de28cdd30ff28255a1797bb"
 
     strings:
