@@ -2,7 +2,7 @@ rule ShadowHVNC_Loader {
     meta:
         description = "Detects Shadow HVNC Loader"
         author = "PandaRE"
-        date = "2025-08-17"
+        date = "2026-08-17"
 
     strings:
         $s1 = "Local\\BridgeAgent"
