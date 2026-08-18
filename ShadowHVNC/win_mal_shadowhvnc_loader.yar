@@ -3,6 +3,7 @@ rule ShadowHVNC_Loader {
         description = "Detects Shadow HVNC Loader"
         author = "PandaRE"
         date = "2026-08-17"
+		referenced = "https://malbearlabs.com/shadow-hvnc-and-shadow-loader-the-kit-that-protects-its-license-better-than-its-customers-dd99520b6af3"
 
     strings:
         $s1 = "Local\\BridgeAgent"
