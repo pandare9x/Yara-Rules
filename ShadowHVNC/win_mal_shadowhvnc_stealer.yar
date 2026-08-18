@@ -4,6 +4,7 @@ rule ShadowHVNC_Stealer {
         author = "PandaRE"
         date = "2026-08-17"
         hash = "d07278643de28cdd30ff28255a1797bb"
+		reference = "https://malbearlabs.com/shadow-hvnc-and-shadow-loader-the-kit-that-protects-its-license-better-than-its-customers-dd99520b6af3"
 
     strings:
         $s1 = "[rdp] collecting RDP connection data"
